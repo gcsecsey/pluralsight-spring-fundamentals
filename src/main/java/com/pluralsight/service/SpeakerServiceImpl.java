@@ -6,7 +6,7 @@ import com.pluralsight.repository.SpeakerRepository;
 
 import java.util.List;
 
-public class SpeakerServiceIml implements SpeakerService {
+public class SpeakerServiceImpl implements SpeakerService {
 
   // impl is hardcoded here
   private SpeakerRepository repository = new HibernateSpeakerRepositoryImpl();
