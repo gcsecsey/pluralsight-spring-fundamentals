@@ -11,6 +11,10 @@ public class SpeakerServiceImpl implements SpeakerService {
   // impl is hardcoded here
   private SpeakerRepository repository;
 
+  public SpeakerServiceImpl(SpeakerRepository repository) {
+    this.repository = repository;
+  }
+
   @Override
   public List<Speaker> findAll() {
     return repository.findAll();
